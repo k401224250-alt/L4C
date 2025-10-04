@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<audio src = "tiger.mp3" id = "Audio"></audio>
+</head>
+<body>
+    <center>
+        <br>
+        <img src="tiger.png" width="300"><br>
+        <button onclick="MyPlay()">Play</button>
+        <button onclick="MyStop()">Stop</button>
+<script>
+    function MyPlay(){
+          document.getElementById("Audio").play(); 
+    }
+
+    function MyStop(){
+        document.getElementById("Audio").pause();
+        document.getElementById("Audio").currentTime=0;
+    }
+</script>
+<br>
+
+</center>
+</body>
+</html>
